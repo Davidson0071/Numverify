@@ -12,7 +12,7 @@ app.set('view engine', 'ejs')
 
 app.get("/verify/:number", async function(req, res) {
   try {
-    const API_ACC_KEY = "23121cc5b8b2c2b9f58ba9081d7b70c7";
+    const API_ACC_KEY = "uI85ZOfCikk18WJV20STZDNfZKBhw66V";
 
     const approval = await axios.get(
       `http://apilayer.net/api/validate?access_key=${API_ACC_KEY}&number=${req.params.number}&country_code=&format=1`    
